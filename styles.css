@@ -1,0 +1,56 @@
+.playground-container {
+    padding: 0;
+    height: 500px;
+    position: relative;
+}
+
+.playground {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.controls {
+    height: 500px;
+}
+
+.welcoming-title {
+    margin-top: 50px;
+    font-size: 2em;
+}
+
+.curr-strength-disp {
+    font-size: 6em;
+}
+
+.circle {
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+    width: 10px;
+    height: 10px;
+    /* background: #232323; */
+    position: absolute;
+    top: calc(50% - 12.5px);
+    left: calc(50% - 12.5px);
+}
+
+.circle:hover {
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+body {
+    font-family: -apple - system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans - serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
