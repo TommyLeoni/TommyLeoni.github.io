@@ -18,7 +18,7 @@ $(document).ready(function() {
   positionCircle();
 });
 
-$("form").submit(function(event) {
+$("#drawVector").click(function(event) {
   event.preventDefault();
   $("#showAllVectors").is(":checked")
     ? (drawAllVectors = true)
