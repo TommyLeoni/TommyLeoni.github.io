@@ -9,6 +9,11 @@ $(window).resize(function() {
   });
 });
 
+$(window).scroll(function() {
+  layer.draw();
+});
+
+
 $(document).ready(function() {
   positionCircle();
 });
