@@ -16,6 +16,7 @@ $(window).scroll(function(e) {
 
 $(document).ready(function() {
   positionCircle();
+  $("#clearPanel").prop("disbaled", true);
 });
 
 $("#drawVector").click(function(event) {
@@ -30,6 +31,10 @@ $("body").keypress(function(e) {
   if (e.key == "d") {
     toggleDarkLight();
   }
+});
+
+$("#clearPanel").click(function() {
+  recreate();
 });
 
 playground.click(function(e) {

@@ -10,11 +10,19 @@ var arrowList = [];
 var drawn = false;
 var arrowColour = '#343a40';
 
+var stage = new Konva.Stage({
+  container: ".playground",
+  width: width,
+  height: height
+});
+
+var layer = new Konva.Layer();
+
 function toggleDarkLight() {
   $("body").toggleClass("bg-dark");
   $("button").toggleClass("btn-dark");
   $(".circle").toggleClass("bg-light");
-  $("h3, p, form").toggleClass("text-light");
+  $("h3, p, form, label").toggleClass("text-light");
   arrowList.forEach(function(a) {
     if (a.attrs.stroke == "#ffffff") {
       a.attrs.stroke = "#343a40";
