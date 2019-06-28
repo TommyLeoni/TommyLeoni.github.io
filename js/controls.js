@@ -9,8 +9,8 @@ $(window).resize(function() {
   });
 });
 
-$(window).scroll(function() {
-  layer.draw();
+$(window).scroll(function(e) {
+  e.preventDefault();
 });
 
 
