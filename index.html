@@ -3,8 +3,11 @@
   <head>
     <title>Vectorize</title>
     <meta charset="utf-8" />
-    <link href="styles.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" /><meta
+      content="width=device-width" name="viewport" />
+    <meta name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"
+      />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -26,40 +29,39 @@
             Vectorize
           </h3>
           <p>
-            Vectorize is a tool created by Jerico Lua and Tomaso Leoni to calculate given
+            Vectorize is a tool created by Jerico Lua and Tomaso Leoni to
+            calculate given
             vectors' direction of strength
           </p>
         </div>
       </div>
       <div class="row justify-content-md-center">
-        <div class="col-sm-8 col-lg-8 col-xl-8 text-center playground-container
-          playground-container-sm m-2 p-0 shadow mrounded">
-          <div class="playground"></div>
-          <div class="circle" id="center-circle"></div>
-        </div>
-        <div
-          class="col-sm-3 col-lg-3 col-xl-3 controls controls-sm shadow m-2
-          rounded text-center">
-          <div class="row h-100 d-flex justify-content-md-center align-middle
-            mt-3">
-            <h3 class="col-12">Current overall strength:</h3>
-            <div class="w-100"></div>
-            <p class="col curr-strength-disp" id="strengthDisplay">0</p>
-            <div class="w-100"></div>
-            <form class="col">
-              <div class="form-check">
+        <div class="col-sm-3 col-lg-3 col-xl-3 controls controls-sm shadow m-2 rounded text-center">
+          <div class="row h-100 d-flex justify-content-center mt-sm-3">
+            <h3 class="col-8 col-sm-12 col-xs-12 col-md-12">Current overall
+              strength:</h3>
+              <p class="col-1 col-sm-12 col-xs-12 col-md-12 curr-strength-disp"
+              id="strengthDisplay">0</p>
+              <div class="form-check col-12 col-sm-12 col-xs-12 col-md-12 m-0">
                 <input type="checkbox" class="form-check-input"
-                  id="showAllVectors" />
-                <label class="form-check-label" for="exampleCheck1">
+                id="showAllVectors" />
+                <label class="form-check-label mb-2">
                   Show all vectors
                 </label>
               </div>
               <br />
-              <button type="submit" class="btn btn-dark btn-light">
+              <div class="col-12 col-sm-6 col-xs-6 col-md-6">
+                <button type="submit" class="btn btn-dark btn-light col-6
+                col-sm-12 col-xs-12 col-md-12">
                 Submit
               </button>
-            </form>
+            </div>
           </div>
+        </div>
+        <div class="col-sm-8 col-lg-8 col-xl-8 text-center playground-container
+          playground-container-sm m-2 p-0 shadow mrounded">
+          <div class="playground"></div>
+          <div class="circle" id="center-circle"></div>
         </div>
       </div>
     </div>
